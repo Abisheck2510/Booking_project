@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+{% block content %}
+<div class="container">
+    <h1>Bookings List</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Passenger Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Phone Number</th>
+                <th>Pickup Point</th>
+                <th>Drop Point</th>
+                <th>Service Class</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for booking in bookings %}
+            <tr>
+                <td>{{ booking.passenger_name }}</td>
+                <td>{{ booking.age }}</td>
+                <td>{{ booking.gender }}</td>
+                <td>{{ booking.phone_number }}</td>
+                <td>{{ booking.pickup_point }}</td>
+                <td>{{ booking.drop_point }}</td>
+                <td>{{ booking.service_class }}</td>
+                <td>
+                    <a href="{% url 'update_booking' booking.id %}" class="btn btn-warning">Edit</a>
+                    <a href="{% url 'delete_booking' booking.id %}" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

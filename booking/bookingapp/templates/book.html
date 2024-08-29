@@ -1,0 +1,95 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<div class="update-search">
+    <div class="f1">
+        <label for="from">FROM</label>
+        <input type="text" id="from" placeholder="Enter Source">
+    </div>
+
+    <div class="f2">
+        <label for="to">TO</label>
+        <input type="text" id="to" placeholder="Enter Destination">
+    </div>
+
+    <div class="f3">
+        <label for="date">DEPARTURE DATE</label>
+        <input type="date" id="date" placeholder="Enter Date">
+    </div>
+
+    <div class="update">
+        <button class="us1">UPDATE SEARCH</button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="d1">
+        <h4>1130MADKCBAB</h4>
+        <p class="d11">AC SLEEPER SEATER (2+1)</p>
+        <p class="d12">Route No : 137AS</p>
+        <p class="d13">Corporation : SETC</p>
+        <p class="d14">People choice for • Friendly • On Time • Lounge Available</p>
+    </div>
+
+    <div class="d2">
+        <h4>11.30</h4>
+        <p>Koyambedu</p>
+    </div>
+
+    <div class="d4">
+        <p>7h 30m</p>
+        <hr style="width: 60px; height: 1px; background-color: lightgray; border: none;">
+    </div>
+
+    <div class="d3">
+        <p class="d31">10th Aug</p>
+        <h4>19.00</h4>
+        <p class="d32">Mattuthavani</p>
+    </div>
+
+    <div class="d5">
+        <h4>₹ 700</h4>
+        <p>Total 10 seats left</p>
+        <a href="{% url 'details' %}">
+            <button>BOOK TICKET</button>
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="d1">
+        <h4>1700KCBSHEAB</h4>
+        <p class="d11">AC SLEEPER SEATER (2+1)</p>
+        <p class="d12">Route No : 184AB</p>
+        <p class="d13">Corporation : SETC</p>
+        <p class="d14">People choice for • New Bus • On Time • Lounge Available</p>
+    </div>
+
+    <div class="d2">
+        <h4>17:00</h4>
+        <p>Kilambakkam</p>
+    </div>
+
+    <div class="d4">
+        <p>7h 00m</p>
+        <hr style="width: 60px; height: 1px; background-color: lightgray; border: none;">
+    </div>
+
+    <div class="d3">
+        <p class="d31">10th Aug</p>
+        <h4>2.00</h4>
+        <p class="d32">Mattuthavani</p>
+    </div>
+
+    <div class="d5">
+        <h4>₹ 565</h4>
+        <p>Total 10 seats left</p>
+        <a href="{% url 'details' %}">
+            <button>BOOK TICKET</button>
+        </a>
+    </div>
+</div>
+
+
+
+{% endblock content %}

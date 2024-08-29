@@ -1,0 +1,137 @@
+{% extends 'main.html' %}
+{% block content %}
+<div class="slider">
+    <marquee direction="left" class="slide">"All South SETC bound buses booking from Chennai Kilambakkam KCBT" | "Online
+        Reservation Toll Free Number: 08066006572 / 9513948001."</marquee>
+</div>
+
+<div class="book-bar">
+    <nav class="navbar">
+        <ul class="navbar nav">
+            <li class="nav-item">
+                <a class="nav-link1" href="{% url 'book' %}">BOOK A TICKET</a>  <!-- Link to the booking page -->
+
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                    LOGIN
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="quotes">
+        <h1>Have A Safe Journey</h1>
+        <p>Your journey, our ride. Book your bus with ease.</p>
+    </div>
+
+    <div class="search-bar">
+        <div class="input-box">
+            <i class="fas fa-bus icon"></i>
+            <input type="text" placeholder="From">
+        </div>
+
+        <div class="switch-icon">
+            <i class="fas fa-exchange-alt"></i>
+        </div>
+
+        <div class="input-box">
+            <i class="fas fa-bus icon"></i>
+            <input type="text" placeholder="To">
+        </div>
+
+        <div class="date-box">
+            <i class="fas fa-calendar-alt icon"></i>
+            <input type="date" id="date" class="date-input">
+        </div>
+
+        <button class="search-button">SEARCH BUSES</button>
+    </div>
+</div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="btn btn-primary" id="button1">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="booking-form">
+    <h4>Top Destinations</h4>
+    <div class="city">
+        <ul class="c1">
+            <li>Chennai - Madurai</li>
+            <li>Chennai - Trichy</li>
+            <li>Chennai - Tirunelveli</li>
+            <li>Chennai - Nagercoil Vadacherry</li>
+            <li>Chennai - Kanyakumari</li>
+            <li>Chennai - Coimbatore</li>
+            <li>Chennai - Kumbakonam</li>
+            <li>Chennai - Salem</li>
+            <li>Chennai - Theni</li>
+            <li>Chennai - Karur</li>
+        </ul>
+        <ul class="c1">
+            <li>Chennai - Hosur</li>
+            <li>Chennai - Pudukottai</li>
+            <li>Chennai - Erode</li>
+            <li>Chennai - Kodaikanal</li>
+            <li>Chennai - Mysuru</li>
+            <li>Chennai - Ooty</li>
+            <li>Chennai - Rameswaram</li>
+            <li>Chennai - Shencottah</li>
+            <li>Chennai - Tiruchendur</li>
+            <li>Chennai - Tirunelveli</li>
+        </ul>
+        <ul class="c1">
+            <li>Chennai - Hosur</li>
+            <li>Chennai - Pudukottai</li>
+            <li>Chennai - Erode</li>
+            <li>Chennai - Kodaikanal</li>
+            <li>Chennai - Mysuru</li>
+            <li>Chennai - Coimbatore</li>
+            <li>Chennai - Kumbakonam</li>
+            <li>Chennai - Salem</li>
+            <li>Chennai - Theni</li>
+            <li>Chennai - Karur</li>
+        </ul>
+        <ul class="c1">
+            <li>Chennai - Hosur</li>
+            <li>Chennai - Pudukottai</li>
+            <li>Chennai - Erode</li>
+            <li>Chennai - Kodaikanal</li>
+            <li>Chennai - Mysuru</li>
+            <li>Chennai - Coimbatore</li>
+            <li>Chennai - Kumbakonam</li>
+            <li>Chennai - Salem</li>
+            <li>Chennai - Theni</li>
+            <li>Chennai - Karur</li>
+        </ul>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.``  q`.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.?
+        ``  `KL;.2/js/bootstrap.min.js"></script>
+{% endblock content %}
